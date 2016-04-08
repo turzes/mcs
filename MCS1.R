@@ -13,7 +13,7 @@ function (Loss, alpha = 0.15, B = 5000, cl = NULL, ram.allocation = T,
   if (!is.null(cl)) 
     max.cores = length(cl)
   B = round(B)
-  if (B < 1000) 
+  if (B < 1000)
     cat(paste("Warning: B is small"))
   if (any(is.na(Loss))) 
     stop("NAs in Loss are not allowed")
